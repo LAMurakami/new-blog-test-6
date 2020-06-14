@@ -4,12 +4,18 @@ layout: default
 
 <div class="home">
 
+<table><tr><td>Variable name</td><td>Variable value</td></tr>
+<tr><td>site.url:</td><td>{{ site.url }}</td></tr>
+<tr><td>site.baseurl:</td><td>{{ site.baseurl }}</td></tr>
+<tr><td>page.url:</td><td>{{ page.url }}</td></tr>
+</table>
+
   <h1 class="page-heading">Posts</h1>
 
   <ul class="post-list">
     {% for post in site.posts %}
       <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }} post.url: {{ post.url }}</span>
 
         <h2>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
