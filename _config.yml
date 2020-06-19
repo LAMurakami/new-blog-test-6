@@ -12,9 +12,9 @@ description: > # this means to ignore newlines until "baseurl:"
   This site is one of many static sites created by LAMurakami to explore
   Jekyll, Liquid, git, GitHub, GitHub Pages, Custom domains, HTTPS,
   Let’s Encrypt, DNS, DDNS, HTTP and HTTP redirects and more.
-baseurl: "/new-blog-test-5" # the subpath of your site, e.g. /blog
+baseurl: "/new-blog-test-6" # the subpath of your site, e.g. /blog
 url: "http://yourdomain.com" # the base hostname & protocol for your site
-# url: "http://new-blog-test-5.lamurakami.com" # the base hostname & protocol for your site
+# url: "http://new-blog-test-6.lamurakami.com" # the base hostname & protocol for your site
 github_username: LAMurakami
 
 # Build settings
