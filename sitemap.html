@@ -1,0 +1,45 @@
+---
+layout: default
+top_nav_name: Site map
+title: A jekyll test site for GitHub Pages Site Map
+permalink: /Sitemap.html
+---
+
+  <h1> {{ page.title }} </h1>
+  <h2>Posts</h2>
+
+  <ul>
+    {% for post in site.posts %}
+      <li>
+        {{ post.date | date: "%b %-d, %Y" }}
+         -
+          <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <h2>Static Pages</h2>
+  <ul>
+    {% for file in site.static_files %}
+      <li>
+        {{ file.modified_time | date: "%b %-d, %Y" }}
+         -
+          <a href="{{ file.path | prepend: site.baseurl }}">
+          {{ file.path }} </a>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <h2>Other Pages</h2>
+  <ul>
+    {% for page in site.pages %}
+      <li>
+          <a href="{{ page.url | prepend: site.baseurl }}">
+            {% if page.title %} {{ page.title }}
+            {% else %} {{ page.url }}
+            {% endif %}
+
+          </a>
+      </li>
+    {% endfor %}
+  </ul>
